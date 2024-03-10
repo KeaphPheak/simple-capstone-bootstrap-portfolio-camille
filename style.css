@@ -1,0 +1,218 @@
+/* Reset default margin and padding for the body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif; /* Set a default font for the body */
+}
+
+/* Style for the top banner container */
+.top-banner {
+  position: relative; /* Position relative for absolute positioning within */
+  width: 100%;
+  height: auto; /* Automatically adjust height based on content */
+}
+
+/* Style for the banner image */
+.top-banner img {
+  width: 100%; /* Make the image fill the width of its container */
+  height: auto; /* Maintain the aspect ratio of the image */
+  display: block; /* Remove default inline spacing for images */
+}
+
+/* Styles for the banner text container */
+.banner-txt {
+  position: absolute; /* Absolute positioning for centering within the parent */
+  top: 35%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center the text both horizontally and vertically */
+  text-align: center; /* Center-align the text */
+  color: white; /* Set the text color to white */
+}
+
+/* Styles for the main title (h1) within the banner text */
+.banner-txt h1.intro {
+  font-family: "Sacramento", cursive; /* Set the font for the title */
+  font-size: 5rem; /* Adjust the font size for the title */
+  margin: 0; /* Remove default margin to center text properly */
+}
+
+/* Styles for the paragraph within the banner text */
+.banner-txt p.introp {
+  font-size: 2rem; /* Adjust the font size for the paragraph */
+  margin-top: 10px; /* Add spacing between the title and paragraph */
+  font-family: "Merriweather", serif;
+}
+
+.middle-container {
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Adjust the height of the container as needed */
+}
+
+.middle-container img {
+  width: 150px; /* Adjust the width of the image as needed */
+  height: 150px; /* Adjust the height of the image as needed */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the circular container */
+  margin-bottom: 25px; /* Add some space between the image and the heading */
+}
+
+.middle-container h2 {
+  color: #4bbfed; /* Set the text color */
+  font-family: "Merriweather", serif; /* Set the font for the heading */
+  font-size: 3.5rem; /* Adjust the font size as needed */
+  margin: 0; /* Remove default margin to center text properly */
+  margin-bottom: 15px;
+}
+
+.middle-container p {
+  line-height: 2;
+  font-family: "Merriweather", serif;
+  max-width: 700px; /* Adjust the maximum width of the paragraph */
+  margin-top: 5px; /* Adjust the margin between the heading and the paragraph */
+  justify-content: center;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px; /* Adjust the minimum height of the container as needed */
+  margin-top: 50px; /* Add some space between the middle-container and skills */
+}
+
+.skills h2 {
+  font-family: "Merriweather", serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+  color: #4bbfed;
+  margin: 0;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  width: 50%;
+  margin: 100px auto 0 auto;
+  text-align: left;
+  row-gap: 2rem;
+}
+
+.skills .parent .typing img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container width */
+}
+
+.coding {
+  flex: 1; /* Allow the coding div to grow and take available space */
+  margin-left: 20px; /* Adjust the margin between the image and text as needed */
+  padding-top: 20px; /* Add padding to the top to align with the top of the image */
+  padding-bottom: 100px;
+}
+
+.coding h3 {
+  font-size: 1.5rem; /* Adjust the font size for the heading as needed */
+  margin: 0; /* Remove default margin to center text properly */
+  font-family: "Merriweather", serif;
+  color: #4bbfed; /* Set the text color */
+}
+
+.coding p {
+  margin: 0; /* Remove default margin for the paragraph */
+}
+
+.skills .parent .anime-pic img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container width */
+}
+
+.anime-watcher {
+  flex: 1; /* Allow the coding div to grow and take available space */
+  margin-left: 20px; /* Adjust the margin between the image and text as needed */
+  margin-top: 60px;
+}
+
+.anime-watcher h3 {
+  font-size: 1.5rem; /* Adjust the font size for the heading as needed */
+  margin: 0; /* Remove default margin to center text properly */
+  font-family: "Merriweather", serif;
+  color: #4bbfed; /* Set the text color */
+}
+
+.anime-pic img {
+  display: flex;
+  flex-direction: row;
+  width: 200px; /* Adjust the width of the image as needed */
+  height: 200px; /* Adjust the height of the image as needed */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the circular container */
+  margin-top: 30px;
+  margin-bottom: 25px; /* Add some space between the image and the heading */
+}
+
+.contact-me {
+  padding-top: 100px;
+  color: #4bbfed; /* Set the text color */
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  padding-bottom: 30px;
+}
+
+.contact-me h3 {
+  color: #2b7592;
+  padding-bottom: 30px;
+}
+
+.contact-me p {
+  color: black;
+  font-family: "Merriweather", serif;
+  padding-bottom: 25px;
+
+}
+
+.contact-me .btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Merriweather", serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+
+}
+
+.bottom-container {
+  background-color: #66bfbf;
+  padding: 50px 0 20px;
+  text-align: center;
+}
+
+.bottom-container a {
+  color: #e5f7f8;
+  font-family: "Merriweather", serif;
+  margin: 10px 20px;
+  text-decoration: none;
+
+}
+
+.bottom-container p {
+  color: #011011;
+  font-family: "Merriweather", serif;
+  margin: 10px 20px;
+  text-decoration: none;
+  padding-top: 20px;
+}
